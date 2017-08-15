@@ -20,7 +20,7 @@ cls
  :UNLOCK
  echo Enter password to unlock folder
  set/p "pass=>"
- if NOT %pass%== 0619 goto FAIL
+ if NOT %pass%== 0000 goto FAIL #change the paddword(0000)
  attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
  ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" Private
  echo Folder Unlocked successfully
